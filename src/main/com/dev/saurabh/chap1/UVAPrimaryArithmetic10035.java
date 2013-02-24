@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * http://uva.onlinejudge.org/external/100/10035.html
+ * http://uva.onlinejudge.org/index.php?option=onlinejudge&Itemid=99999999&page=show_problem&category=&problem=982&mosmsg=Submission+received+with+ID+11337210
  */
 public class UVAPrimaryArithmetic10035 {
 
