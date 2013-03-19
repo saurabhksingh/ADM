@@ -1,8 +1,6 @@
 package main.com.dev.saurabh.uva.vol1;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -49,20 +47,15 @@ public class UVA108MaximumSum
                         //apply Kadane method
                         int localMaxSum = Integer.MIN_VALUE;
                         int sum = 0;
-                        int  start = 0, end = 0;
-                        int tmpStart = 0;
                         for(int k=0; k<matrixSize; k++)
                         {
                             sum += temp[k];
                             if(sum < 0)
                             {
                                 sum = 0;
-                                tmpStart = k+1;
                             }
                             else if(sum > localMaxSum)
                             {
-                                start = tmpStart;
-                                end = k;
                                 localMaxSum = sum;
                             }
                         }
